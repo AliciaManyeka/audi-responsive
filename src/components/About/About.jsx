@@ -1,9 +1,9 @@
 import React from "react";
-import CarPng from "../../assets/green.png";
+import CarPng from "../../assets/audi-2.png";
 
 const About = () => {
   return (
-    <div className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div className=" dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300"id="About">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">

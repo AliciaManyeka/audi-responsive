@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from '../../assets/i love my Audi!.png';
+// import Logo from '../../assets/i love my Audi!.png';
+import Logo from "../../assets/car-log.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -10,20 +11,34 @@ import {
 
 const FooterLinks = [
   {
-    title: "Home",
+    id: 1,
+    title: "HOME",
     link: "/#",
   },
   {
-    title: "About",
-    link: "/#about",
+    id: 1,
+    title: "Services",
+    link: "/#services",
   },
   {
+    id: 2,
+    title: "Gallery",
+    link: "/#cars",
+  },
+  {
+    id: 1,
+    title: "ABOUT",
+    link: "/#About",
+  },
+  {
+    id: 1,
     title: "Contact",
-    link: "/#contact",
+    link: "/#Contact",
   },
   {
-    title: "Blog",
-    link: "/#blog",
+    id: 1,
+    title: "Testimonial",
+    link: "/#Testimonials",
   },
 ];
 const Footer = () => {
@@ -62,7 +77,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          {/* Links */}
+        
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             <div className="">
               <div className="py-8 px-4 ">

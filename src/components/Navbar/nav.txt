@@ -1,0 +1,118 @@
+
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
+import { AiOutlineMenu,  } from "react-icons/ai";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  return (
+    <nav
+      className={`bg-${
+        darkMode ? "dark" : "white"
+      }shadow-[0_0_10px_rgba(0,0,255,0.2)]
+    p-4 flex justify-between items-centre`}
+    >
+      <div className="logo text-lg font-bold">
+        {darkMode ? (
+          <span className="text-white">Audi</span>
+        ) : (
+          <span className="text-black-800">Audi</span>
+        )}
+      </div>
+      <div className="md:hidden flex">
+        <button
+          className="mobile-menu-button"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <AiOutlineMenu size={24} color={darkMode ? "white" :-800} />
+        </button>
+      </div>
+      <ul
+        className={`md:flex ${
+          isOpen ? "flex" : "hidden"
+        }md:space-x-4 md:flex-row flex-col`}
+      >
+        <li>
+          <link
+            to="/"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            Home
+          </link>
+        </li>
+        <li>
+          <link
+            to="/about"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            About
+          </link>
+        </li>
+        <li>
+          <link
+            to="/services"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            Services
+          </link>
+        </li>
+        <li>
+          <link
+            to="/gallery"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            Gallery
+          </link>
+        </li>
+        <li>
+          <link
+            to="/Testimonial"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            Testimonials
+          </link>
+        </li>
+        <li>
+          <link
+            to="/Contact"
+            className={`hover:translate-y-1 hover:shadow-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out ${
+              darkMode ? "text-white" : "text-dark-800"
+            }py-2 px-4 rounded-lg`}
+          >
+            Contact
+          </link>
+        </li>
+      </ul>
+      <div className="flex">
+        {darkMode ? (
+          <BiSolidSun
+            size={24}
+            color="white"
+            onClick={() => setDarkMode(false)}
+          />
+        ) : (
+          <BiSolidMoon
+            size={24}
+            color="black"
+            onClick={() => setDarkMode(true)}
+          />
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

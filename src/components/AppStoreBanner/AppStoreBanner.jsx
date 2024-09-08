@@ -4,7 +4,7 @@ import PlayStoreImg from "../../assets/website/play_store.png";
 import pattern from "../../assets/car-log.png";
 
 const bannerImg = {
-  backgroundImage: `url(${pattern})`,
+  // backgroundImage: `url(${pattern})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
