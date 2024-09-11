@@ -1,8 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// Component import
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -12,9 +10,10 @@ import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
 import Contact from "./components/Contact/Contact";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Footer from "./components/Footer/Footer";
+import image from './assets/background.png'
 
 const App = () => {
-  // dark mode start
+
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -29,7 +28,6 @@ const App = () => {
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
-  // dark mode end
 
   React.useEffect(() => {
     AOS.init({
@@ -41,7 +39,7 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
+    <div className=" back bg-white dark:bg-black dark:text-white text-black overflow-x-hidden" >
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
       <About />
