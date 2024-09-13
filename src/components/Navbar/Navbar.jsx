@@ -7,7 +7,7 @@ import ResponsiveMenu from "./ResponsiveMenu";
 export const Navlinks = [
   {
     id: 1,
-    name: "HOME",
+    name: "Home",
     link: "/#",
   },
   {
@@ -17,12 +17,17 @@ export const Navlinks = [
   },
   {
     id: 2,
-    name: "Gallery",
+    name: "CarList",
     link: "/#cars",
   },
   {
     id: 1,
-    name: "ABOUT",
+    name: "Our Gallery",
+    link: "/#ImageSlider",
+  },
+  {
+    id: 1,
+    name: "About",
     link: "/#About",
   },
   {

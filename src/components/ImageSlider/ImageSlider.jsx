@@ -29,6 +29,7 @@ const ImageSlider = () => {
 
   return (
     <div className="">
+      <span id="ImageSlider"></span>
       <div className=" dark:bg-black flex items-center flex-col justify-center  h-screen relative">
         {images.map((image, index) => (
           <motion.img

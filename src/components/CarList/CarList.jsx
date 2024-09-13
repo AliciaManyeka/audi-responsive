@@ -2,7 +2,6 @@ import React from "react";
 import whiteCar from "../../assets/audi-2.png";
 import car2 from "../../assets/audi-3.png";
 import car3 from "../../assets/audi-4.png";
-import { Link } from "react-router-dom";
 
 const carList = [
   {
@@ -24,7 +23,6 @@ const carList = [
     aosDelay: "1000",
   },
 ];
-
 
   // const navigate = useNavigate();
 
@@ -80,23 +78,8 @@ const CarList = () => {
         </div>
 
         <div className="grid place-items-center mt-8">
-          {/* <ul className="flex items-center gap-8">
-              {Navlinks.map(({ id, name, link }) => (
-                <li key={id} className="py-4">
-                  <a
-                    href={link}
-                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
-                  >
-                    {name}
-                  </a>
-                </li>
-              ))}
-              /</ul> */}
-
           <button data-aos="fade-up" className="button-outline">
-            <li>
-              <Link to="/ImageSlider">View our Gallery</Link>
-            </li>
+            View our Gallery
           </button>
           {/* <button
             data-aos="fade-up"

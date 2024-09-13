@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -50,11 +49,11 @@ const App = () => {
         <About />
         <Services />
         <CarList />
-        <Route path="/ImageSlider" element={<ImageSlider />} />
+        <ImageSlider />
+        
         <Testimonial />
         <AppStoreBanner />
         <Contact />
-        <ImageSlider />
         <Footer />
       </div>
     </div>
