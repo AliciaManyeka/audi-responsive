@@ -78,9 +78,9 @@ const CarList = () => {
         </div>
 
         <div className="grid place-items-center mt-8">
-          <button data-aos="fade-up" className="button-outline">
+          {/* <button data-aos="fade-up" className="button-outline">
             View our Gallery
-          </button>
+          </button> */}
           {/* <button
             data-aos="fade-up"
             className="button-outline"
