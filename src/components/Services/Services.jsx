@@ -45,7 +45,7 @@ const Services = () => {
               Why Choose Us
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="dark:bg-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {skillsData.map((skill) => (
               <div
                 key={skill.name}
@@ -64,14 +64,14 @@ const Services = () => {
                 </a>
               </div>
             ))}
-            <div className="grid place-items-center mt-8">
-              <button data-aos="fade-up" className="button-outline">
-                more services
-              </button>
-            </div>
           </div>
         </div>
       </div>
+      {/* <div className="grid place-items-center mt-8">
+        <button data-aos="fade-up" className="button-outline">
+          more services
+        </button>
+      </div> */}
     </>
   );
 };

@@ -43,9 +43,9 @@ const FooterLinks = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
+    <div className=" mt-14 ">
       <section className="container">
-        <div className=" grid md:grid-cols-3 py-5">
+        <div className=" grid md:grid-cols-3 ">
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
               Audi Exclusive
@@ -77,7 +77,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        
+
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             <div className="">
               <div className="py-8 px-4 ">
@@ -97,6 +97,10 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <img src={Logo} alt="Audi logo" />
+                <p className="">
+                  Come and lets give you the car of your dreams with Licia's
+                  Audi Services
+                </p>
               </div>
             </div>
             <div className="">

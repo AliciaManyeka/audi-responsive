@@ -3,7 +3,10 @@ import CarPng from "../../assets/audi-2.png";
 
 const About = () => {
   return (
-    <div className=" dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300"id="About">
+    <div
+      className="  dark:bg-black sm:min-h-[600px] sm:grid sm:place-items-center duration-300"
+      id="About"
+    >
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">
@@ -23,14 +26,15 @@ const About = () => {
               </h1>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
                 At the heart of the Audi brand lies a deep passion for
-                performance.From the legendary quattro all-wheel drive system
-                to the exhilarating power of our turbocharged engines,every
-                Audi is engineered to deliver an unparalleled driving experience. Whether carving through tight mountain roads or
-                effortlessly accelerating onto the highway,an Audi responds
-                with precision,agility, and pure driving pleasure.
+                performance.From the legendary quattro all-wheel drive system to
+                the exhilarating power of our turbocharged engines,every Audi is
+                engineered to deliver an unparalleled driving experience.
+                Whether carving through tight mountain roads or effortlessly
+                accelerating onto the highway,an Audi responds with
+                precision,agility, and pure driving pleasure.
               </p>
               <p data-aos="fade-up">
-              We have always been synonymous with premium quality, innovative
+                We have always been synonymous with premium quality, innovative
                 technology, and thrilling performance. But what if we told you
                 that you can enjoy all of those benefits without breaking the
                 bank? Our commitment to providing affordable luxury means that

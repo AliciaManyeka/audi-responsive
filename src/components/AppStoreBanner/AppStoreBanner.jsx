@@ -13,7 +13,7 @@ const bannerImg = {
 };
 const AppStoreBanner = () => {
   return (
-    <div className="container">
+    <div className=" dark:bg-black ">
       <div
         className=" text-black py-10 sm:min-h-[400px] sm:grid sm:place-items-center rounded-xl"
         style={bannerImg}
@@ -27,7 +27,8 @@ const AppStoreBanner = () => {
               Get Started with our app
             </h1>
             <p data-aos="fade-up" className="text-center sm:px-20">
-                Where buying is made easier for you nomatter where you are you  can always reach us, its only a click away
+              Where buying is made easier for you nomatter where you are you can
+              always reach us, its only a click away
             </p>
             <div
               data-aos="fade-up"

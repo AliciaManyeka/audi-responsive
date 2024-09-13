@@ -14,17 +14,53 @@ html {
     @apply rounded-md border-2 border-primary hover:bg-primary/80 hover:text-black duration-500 py-2 px-6 text-primary tracking-wider;
   }
 }
+* {
+  /* p{color: white;}
+  a{color: white;}
+  span{color: white;}
+  h1{color: white;} */
+  color: white;
+}
+.overlay {
+  height: 480px;
+  width: 480px;
+  background: rgba(0, 0, 0, 8);
+  backdrop-filter: blur(10px);
+}
+/* .background {
+  background-image: url(.\assets\background.png) !important ;
+  backdrop-filter: blur(50px) !important;
+  -webkit-backdrop-filter: blur(50px) !important;
 
-  /* body{
-  background-image: url(.\assets\background.png)!important ;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-}  */
+  height: 10%;
+  background-size: cover;
+  background-position: top;
 
-/* code{
-  background-image: url(.\assets\background.png)!important ;
-  height: 100%;
   width: 100%;
+
   background-repeat: no-repeat;
-} */ 
+} */
+ .background {
+  position: relative; 
+  background-image: url(./assets/background.png) !important;
+  background-size: cover;
+  width: 100%;
+  /* height: 840vh;   */
+  height: 100%;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.blur-effect {
+  /* position: absolute;  */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(186, 191, 243, 0.5); 
+  backdrop-filter: blur(10px) !important; 
+  -webkit-backdrop-filter: blur(50px) !important;
+  z-index: 1; 
+}
+
+
