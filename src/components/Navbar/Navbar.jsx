@@ -41,26 +41,6 @@ export const Navlinks = [
     link: "/#Testimonials",
   },
 ];
-{
-  /* <div className="NavLinks">
-  <ul>
-
-  <li>
-    <Link to="/">Home</Link>
-  </li>
-  <li>
-    <Link to="/Host">Host</Link>
-  </li>
-  <li>
-    <Link to="/About">About</Link>
-  </li>
-  <li>
-    <Link to="/Vans">Vans</Link>
-  </li>
-  </ul>
-</div>; */
-}
-// ];
 const Navbar = ({ theme, setTheme }) => {
   const [showMenu, setShowMenu] = useState(false);
 
